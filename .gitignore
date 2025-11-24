@@ -1,0 +1,44 @@
+### Workspace root ignore rules
+# Keep environment configs, logs, datasets, and large artifacts off GitHub.
+
+# Environment secrets for AI-Management-System
+AI-Management-System/.env
+AI-Management-System/.env.*
+AI-Management-System/.env.local
+AI-Management-System/.env.production
+AI-Management-System/.env.staging
+AI-Management-System/.env.development
+
+# Virtual environments
+AI-Management-System/ai_env/
+AI-Management-System/.venv/
+
+# Logs and runtime output
+AI-Management-System/logs/
+AI-Management-System/data/
+AI-Management-System/trading_history/
+AI-Management-System/market_data/
+AI-Management-System/*.log
+
+# Models and checkpoints
+AI-Management-System/models/
+AI-Management-System/*.model
+AI-Management-System/*.pkl
+AI-Management-System/*.joblib
+
+# IDE/system cruft
+*.swp
+*.swo
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+
